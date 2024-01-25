@@ -1,0 +1,1 @@
+export const DATE_REGEXES = [  /^\d{4}-\d{2}-\d{2}$/, /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/];
