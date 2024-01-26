@@ -37,7 +37,7 @@ https://www.ipqualityscore.com/documentation/overview
 To use the `getProxyDetectionResult` function, you need to import it into your application:
 
 ```javascript
-import IPQS_API from 'npm-ipqs-api-integration';
+import IPQS_API from 'ipqs-node-sdk';
 ```
 
 Then, you can call the function and await the returned Promise to get the result:
@@ -242,7 +242,7 @@ IPQS_API.proxyDetection(privateKey, params).post()
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -272,13 +272,13 @@ Proxy Detection Averages is a bit different from the other API endpoints as ther
 
 Methods Available:
 ```javascript
-IPQS_API.proxyDetectionAverages(privateKey, params).get();
-IPQS_API.proxyDetectionAverages(privateKey, params).post();
+IPQS_API.averages(privateKey, params).get();
+IPQS_API.averages(privateKey, params).post();
 ```
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
 
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -302,7 +302,7 @@ IPQS_API.postback(privateKey, params).get();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -328,12 +328,12 @@ https://www.ipqualityscore.com/documentation/proxy-detection/conversions
 
 Methods Available:
 ```javascript
-IPQS_API.proxyDetectionReport(privateKey, params).get();
+IPQS_API.report(privateKey, params).get();
 ```
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -344,7 +344,7 @@ Example:
             ip: '8.8.8.8',
         }
     }
-    const res = await IPQS_API.proxyDetectionReport(privateKey, params).get();
+    const res = await IPQS_API.report(privateKey, params).get();
     console.log("Response", res);
 ```
 
@@ -360,7 +360,7 @@ IPQS_API.creditUsage(privateKey, params).get();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -387,7 +387,7 @@ IPQS_API.emailValidation(privateKey, params).post();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -420,7 +420,7 @@ IPQS_API.leakedReport(privateKey, params).get();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -449,7 +449,7 @@ IPQS_API.phoneValidation(privateKey, params).post();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -479,7 +479,7 @@ IPQS_API.urlValidation(privateKey, params).post();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {
@@ -509,7 +509,7 @@ IPQS_API.requestLists(privateKey, params).post();
 
 Example:
 ```javascript
-    import IPQS_API from 'npm-ipqs-api-integration';
+    import IPQS_API from 'ipqs-node-sdk';
     
     const privateKey = 'yourPrivateKey'
     const params = {

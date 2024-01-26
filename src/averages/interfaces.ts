@@ -1,4 +1,4 @@
-export interface Averages {
+export interface AveragesParams {
     country?: string,
     start_date?: string,
     end_date?: string,

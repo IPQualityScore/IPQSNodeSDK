@@ -1,6 +1,6 @@
 import {TransactionDetails} from "@src/utils/request/interfaces";
 
-export interface ProxyDetection extends ProxyDetectionParamsBase, TransactionScoringResponse, PhoneReputation {}
+export interface ProxyDetectionParams extends ProxyDetectionParamsBase, TransactionScoringResponse, PhoneReputation {}
 interface ProxyDetectionParamsBase {
     ip: string,
     user_agent?: string,

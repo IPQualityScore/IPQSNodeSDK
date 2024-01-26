@@ -1,4 +1,4 @@
-export interface RequestList {
+export interface RequestListParams {
     type?: TypeValues,
     page?: number,
     limit?: number,

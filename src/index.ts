@@ -1,7 +1,7 @@
 import {getProxyDetectionResult} from "@src/proxyDetection";
 import {Request} from "@src/utils/request/interfaces";
 import getAveragesResult from "@src/averages";
-import {Averages} from "@src/averages/interfaces";
+import {AveragesParams} from "@src/averages/interfaces";
 import getPostbackResult from "@src/postback";
 import getReportResult from "@src/report";
 import {getEmailValidationResult, postEmailValidationResult} from "@src/email";
@@ -19,7 +19,7 @@ export const proxyDetection = (privateKey: string, params: Request) => {
     }
 }
 
-export const averages = (privateKey: string, params: Averages) => {
+export const averages = (privateKey: string, params: AveragesParams) => {
     return {
         get: () => getAveragesResult(privateKey, params)
     }

@@ -1,14 +1,14 @@
 import {EmailParams} from "@src/email/interfaces";
-import {ProxyDetection} from "@src/proxyDetection/interfaces";
+import {ProxyDetectionParams} from "@src/proxyDetection/interfaces";
 import {
     postback,
     PostbackUpdateParams
 } from "@src/postback/interfaces";
-import {Report} from "@src/report/interfaces";
+import {ReportParams} from "@src/report/interfaces";
 import {PhoneParams} from "@src/phone/interfaces";
 import {UrlParams} from "@src/url/interfaces";
-import {RequestList, RequestListUpdateParameters} from "@src/requests/interfaces";
-import {Averages} from "@src/averages/interfaces";
+import {RequestListParams, RequestListUpdateParameters} from "@src/requests/interfaces";
+import {AveragesParams} from "@src/averages/interfaces";
 import {LeakedParams} from "@src/leaked/interfaces";
 
 export interface ApiRequestInterface {
@@ -31,11 +31,11 @@ export interface Request {
     requestParameters?: EmailParams |
         PhoneParams|
         UrlParams |
-        RequestList |
-        ProxyDetection |
-        Averages |
+        RequestListParams |
+        ProxyDetectionParams |
+        AveragesParams |
         postback |
-        Report |
+        ReportParams |
         LeakedParams,
     updateParameters?: PostbackUpdateParams | RequestListUpdateParameters,
 }

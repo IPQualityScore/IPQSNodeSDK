@@ -7,7 +7,7 @@
 
 import module, {getAveragesResult} from "@src/averages/index";
 import {
-    Averages
+    AveragesParams
 } from "@src/averages/interfaces";
 import {Request} from "@src/utils/request/interfaces";
 import {ERRORS, URL_PROP_NAME} from "@src/averages/const";
@@ -24,7 +24,7 @@ describe('ProxyDetectionAverages', () => {
         });
         describe('getProxyDetectionAveragesResult()', () => {
             it('should call getResult with GET method', async () => {
-                const params: Averages = {
+                const params: AveragesParams = {
                     country: 'all',
                     start_date: '2000-01-01',
                     end_date: '2000-01-01',

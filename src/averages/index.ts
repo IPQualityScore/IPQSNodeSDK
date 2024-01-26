@@ -1,12 +1,12 @@
 import {getResult} from "@src/utils/request";
 import {ERRORS, URL_PROP_NAME} from "./const";
-import {Averages, AveragesResponse} from "@src/averages/interfaces";
+import {AveragesParams, AveragesResponse} from "@src/averages/interfaces";
 import {FilterObjectType} from "@src/utils/interfaces";
 import {Request, ResponseFail, ResponseXML} from "@src/utils/request/interfaces";
 import {disallowPKConfigs, validateDates} from "@src/utils";
 import {BASE_URL} from "@src/utils/request/const";
 
-export const getAveragesResult = async (privateKey: string, params: Averages): Promise<AveragesResponse|ResponseXML|ResponseFail> => {
+export const getAveragesResult = async (privateKey: string, params: AveragesParams): Promise<AveragesResponse|ResponseXML|ResponseFail> => {
     const updatedParams: Request = {
         config: {
             exportType: "json"
